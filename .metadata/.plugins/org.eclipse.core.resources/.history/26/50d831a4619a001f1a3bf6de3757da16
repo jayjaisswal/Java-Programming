@@ -1,0 +1,21 @@
+package Practice;
+
+public class NestedCatchBlock {
+	public static void main(String args[]) {
+		 try {
+	            int[] numbers = {10, 20};
+	            int result = numbers[2] / 0; 
+	            System.out.println("Result: " + result);
+	            
+	        } catch (ArrayIndexOutOfBoundsException e) {
+	            System.out.println("Error: Array index out of bounds - " + e);
+	        } catch (ArithmeticException e) {
+	            System.out.println("Error: Cannot divide by zero - " + e);
+	        } finally {
+	            System.out.println("Execution completed.");
+	        }
+	}
+
+}
+
+

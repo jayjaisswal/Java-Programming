@@ -1,0 +1,46 @@
+package Practice;
+import java.util.*;
+
+import java.util.Scanner;
+
+public class Calculator 
+{
+	// print days and make a calculator
+		public static void main(String args[]) 
+		{
+			System.out.println("Enter the Operation You Want to Perform:/nEnter 1 for Addition");
+			Scanner sc = new Scanner(System.in);
+			int num1 = sc.nextInt();
+			switch(num1) 
+			{
+				case 1: 
+				{
+					System.out.println("Enter 2 Integers for Addition");
+					Scanner s = new Scanner(System.in);
+					int x = s.nextInt();
+					int y = s.nextInt();
+					System.out.println("Sum is" + (x+y));	
+				
+				}
+				case 2: 
+				{
+					System.out.println("Enter 2 Integers for Multiplication");
+					Scanner s = new Scanner(System.in);
+					int x = s.nextInt();
+					int y = s.nextInt();
+					System.out.println("Sum is" + (x*y));	
+				
+				}
+				case 3: 
+				{
+					System.out.println("Enter 2 Integers for Division");
+					Scanner s = new Scanner(System.in);
+					int x = s.nextInt();
+					int y = s.nextInt();
+					System.out.println("Sum is" + (x/y));	
+				
+				}
+			}
+
+		}
+}
